@@ -1,0 +1,467 @@
+@charset "utf-8";
+.icons{
+	width:50px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Apply the spacing to your content containers instead of the whole body */
+div.art, footer {
+    margin: 10px;
+}
+
+/**********************************************************/
+
+hr{
+	border: none;               /* Remove default browser 3D border */
+    border-top: 1px dashed #e7e7e7; /* Use border-top for a clean line */
+    height: 0;                  /* Ensure no extra internal height */
+    width: 100%;                /* Optional: ensure it spans the container */
+    margin: 20px 0;
+	}
+
+@-webkit-keyframes dark{
+	0% {
+		color: rgb(253, 135, 0);
+	}
+
+	50% {
+		color: rgb(255, 0, 0);
+	}
+
+	70% {
+		color: #7f0000;
+	}
+
+
+	100% {
+		color: rgb(59, 5, 23);
+	}
+}
+
+.darkmagictext {
+	-webkit-animation: dark 2s infinite alternate;
+}
+
+
+@-webkit-keyframes magic {
+	0% {
+		color: dodgerblue;
+	}
+
+	25% {
+		color: lightseagreen;
+	}
+
+	50% {
+		color: lime;
+	}
+
+	75% {
+		color: coral;
+	}
+
+	85% {
+		color: mediumpurple;
+	}
+
+	100% {
+		color: palevioletred;
+	}
+}
+
+.magictext {
+	-webkit-animation: magic 4s infinite alternate;
+}
+
+
+
+h4 {
+	font-size: 15px;
+}
+
+h3,a{
+color:rgb(148, 148, 22)!important;
+}
+
+a.footer a {
+	color: black;
+	text-decoration: bold;
+}
+
+a,
+footer,
+a:visited {
+				color: rgb(0, 0, 0);
+	
+}
+
+@-webkit-keyframes pastelmagic {
+	0% {
+		color: rgb(255, 167, 167);
+	}
+
+	25% {
+		color: rgb(162, 255, 199);
+	}
+
+	50% {
+		color: rgb(192, 176, 255);
+	}
+
+	100% {
+		color: rgb(255, 0, 0);
+	}
+}
+
+
+
+.thumbs img:hover {
+	opacity: 0.6;
+	color: #7f0000;;
+}
+
+
+
+.biopic{
+	max-width: 650px;
+}
+/* DROPDOWN EXPERIMENTS */
+/* default style */
+.selectnav { display: none; }
+
+/* Shrink thumbnail size if the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
+
+ @media screen and (max-width: 600px) {
+    .archive-container {
+        overflow-x: auto; /* Only scrolls if the content physically cannot fit */
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .archive-table {
+        table-layout: fixed;
+        width: 200%; /* This allows the table to be wider than the phone so people can swipe */
+        min-width: 500px; /* This is okay ONLY if overflow-x is set to auto */
+    }
+}
+
+
+	/* comic shit first*/
+	.comic_icons {
+    width: 120px;
+}
+
+/* This part handles screens smaller than 600px */
+    .archive-item {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hover-thumb {
+        display: block !important; /* Force the image to show */
+        position: static;          /* Remove the "floating" pop-up behavior */
+        width: 100%;               /* Make it as wide as the container */
+        max-width: 250px;          /* But don't let it get huge */
+        margin-top: 10px;
+        border: 2px solid #00ff00;
+        pointer-events: auto;      /* Allow tapping */
+    }
+
+    /* Remove the hover logic so it doesn't flicker on tap */
+    .archive-item:hover .hover-thumb {
+        display: block; 
+    }
+
+
+	.freakyfooter {
+    display: flex;
+    flex-direction: row;      /* Force horizontal */
+    flex-wrap: nowrap;        /* DO NOT let them stack */
+    justify-content: center;  /* Center the group */
+    align-items: center;      /* Align them vertically in the middle */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.freakyfooter img {
+    height: auto;
+    flex-shrink: 1;           /* Allows them to shrink if the screen is tiny */
+    min-width: 0;             /* Essential for shrinking to work */
+}
+
+
+
+	/* THE RESt*/
+
+	.biopic{
+		max-width: 460px;
+	}
+
+	body {
+		font-size: smaller;
+		padding: 2px;
+
+	}
+	.thumbs img {
+		width: 30px;
+		height: auto;
+	}
+
+	.full img.tall {
+		width: 100%;
+		height: auto;
+
+	}
+
+	.comic img {
+		width: 100%;
+
+	}
+
+	.bigpic img {
+		max-width: 450px;
+	}
+
+	.icons{
+		width:50px;
+	}
+	.minipic {
+		max-width: 100px;
+	}
+	.sidepane{
+
+	font-size: smaller;
+}
+ 
+.dropdown-content{
+}
+
+
+.banner{/*big banner */
+	max-width: 440px;
+}
+
+
+.midpic{
+	max-width: 350px;
+}
+
+}
+#copyright{
+	color:#000000;
+}
+
+.wandering{
+	
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+	
+;
+	color:rgb(220, 220, 220);
+	.dropdown-toggle::after{
+		background-image: url('../img/icons/menulines_small_white.png');
+	};
+	h3,h2{
+		color:rgb(87, 86, 83);
+	}
+
+	a{
+		color:#4db200;
+	}
+
+	a:hover{
+		color:#ffffff;
+	}
+
+	}
+	 .flipped-x{
+		 transform: scaleX(-1);
+	}
+
+
+	.thumbs{
+		max-width: 50px;
+	}
+
+	.current{
+		color:rgb(34, 44, 33)!important;
+		pointer-events: none;
+	}
+
+/******************************* cOMIC  REDO 2026*/
+
+.comi_button{
+	display: inline-block;  /* Crucial: gives the link dimensions */
+    width: 200px;           /* Adjust to your PNG width */
+    height: 150px;          /* Adjust to your PNG height */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* This hides the "Home" text so only the image shows */
+    text-indent: -9999px;
+    overflow: hidden;
+	transition: background-image 0.25s ease;*/
+}
+
+
+.button_boot{
+
+	height:150px;
+	width:200px;
+	background-image: url('../../www/img/buttons/wandering_button_boot_idle.png');
+	transition: background-image 0.3s ease;
+	background-repeat: no-repeat;
+}
+.button_boot:hover {
+	background-image: url('../../www/img/buttons/wandering_button_boot_hover.png');
+}
+
+
+/* ALL COMIC CSS  GOES HERE for Wandering******************* */
+.comic{
+	display:block;
+	margin: auto;
+	width: 100%;
+	max-width: 600px;
+}
+
+.comic img{
+	display:block;
+	margin: auto;
+	max-width: 600px;
+}
+
+.comicicons {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    display: inline-block; /* Ensure it renders */
+    visibility: visible !important; /* Force visibility */
+}
+
+
+.banner{/*big banner */
+	max-width: 400px;
+}
+
+
+
+/* ARCHIVE TABLE STYLE*/
+./* 1. Force the container to never be wider than the window */
+.archive-container {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 20px auto !important;
+    overflow-x: auto !important; /* Forces scroll ONLY if content is huge */
+    padding: 0 !important;
+}
+
+/* 2. Force the table to behave like a standard box */
+.archive-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed !important; 
+    min-width: 0 !important; /* Kills the 450px/350px ghost */
+    margin: 0 !important;
+}
+
+/* 3. The "Surface Pro" special: ensure no hidden horizontal scroll on the whole page */
+html, body {
+    overflow-x: hidden; 
+    position: relative;
+}
+
+/* 4. Ensure no tiny element inside is propping it open */
+.archive-table td, 
+.archive-table th {
+    box-sizing: border-box !important;
+    word-break: break-word !important;
+border-collapse: collapse;
+	
+
+}
+
+.archive-table td{
+border-bottom: 2px dashed #33857f; 
+border-left: 2px dashed #33857f;; 
+padding-bottom: 5px;
+
+}
+.archive-table tr{
+
+}
+/* Set exact percentages for your columns */
+.archive-table th:nth-child(1) { width: 15%; } /* Ch. Number */
+.archive-table th:nth-child(2) { width: 60%; } /* Title & Image */
+.archive-table th:nth-child(3) { width: 25%; } /* Date */
+
+.archive-table thead {
+	background-color: rgb(247, 255, 212);
+	color:rgb(255, 96, 96);
+	
+
+}
+.archive-table img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.archive-table{
+	color:#000000;
+	background-color: rgb(243, 255, 243);
+}
+/*.archive-table tr:nth-child(even) {
+  background-color: rgb(66, 55, 55);
+}
+
+
+
+  /* MAKE MAILLITE FORM MATCH MY SITE TODO*/
+ 
+
+  /* comic 'spinner' when lazy loading*/
+
+  .logo{
+	/* Dimensions: Keep it consistent */
+  width: 300px; 
+  height: 300px;
+  
+  /* Image Quality: Prevents stretching/squishing */
+  object-fit: contain;
+ 
+  }
+
+
+
+  @-webkit-keyframes pastelmagic {
+	0% {
+		color: rgb(255, 167, 167);
+	}
+
+	25% {
+		color: rgb(162, 255, 199);
+	}
+
+	50% {
+		color: rgb(192, 176, 255);
+	}
+
+	100% {
+		color: rgb(255, 0, 0);
+	}
+}
+
+
+.faithlessdancer{
+	max-width: 1000px;
+	background-color: #000000;
+}

@@ -1,0 +1,11 @@
+# gcloud app deploy --project velacomic --version 1
+runtime: python314
+
+handlers:
+  - url: /
+    static_files: static/index.html
+    upload: static/index.html
+
+  - url: /(.*)
+    static_files: static/\1
+    upload: static/(.*)
