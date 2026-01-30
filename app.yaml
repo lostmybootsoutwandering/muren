@@ -1,4 +1,4 @@
-# gcloud app deploy --project velacomic --version 1
+# gcloud app deploy --project lostmyboots --version 1
 runtime: python314
 
 handlers:
