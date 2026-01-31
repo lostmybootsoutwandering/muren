@@ -1,12 +1,14 @@
-# gcloud app deploy --project lostmyboots --version 2
+# gcloud app deploy --project lostmyboots --version 1
 
 runtime: python313
 
 handlers:
-  - url: /
-    static_files: static/index.html
-    upload: static/index.html
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+  secure: always
 
-  - url: /(.*)
-    static_files: static/\1
-    upload: static/(.*)
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
+  secure: always
