@@ -17,13 +17,22 @@ div.art, footer {
 
 /**********************************************************/
 
-hr{
+
+
+.archive{
+	background-image: url('../img/background.png');
+	background-size:contain;
+
+	hr{
 	border: none;               /* Remove default browser 3D border */
-    border-top: 1px dashed #e7e7e7; /* Use border-top for a clean line */
+    border-top: 1px dashed #000000; /* Use border-top for a clean line */
     height: 0;                  /* Ensure no extra internal height */
-    width: 100%;                /* Optional: ensure it spans the container */
+    width: 100%;           rgb(0, 0, 0) Optional: ensure it spans the container */
     margin: 20px 0;
-	}
+	};
+
+}
+
 
 @-webkit-keyframes dark{
 	0% {
@@ -127,16 +136,9 @@ a:visited {
 }
 
 
-
-.biopic{
-	max-width: 650px;
-}
-/* DROPDOWN EXPERIMENTS */
-/* default style */
-.selectnav { display: none; }
-
 /* Shrink thumbnail size if the screen size is 600px wide or less */
 @media screen and (max-width: 600px) {
+
 
  @media screen and (max-width: 600px) {
     .archive-container {
@@ -257,10 +259,17 @@ a:visited {
 
 }
 #copyright{
-	color:#000000;
+	color:#786401;
 }
 
 .wandering{
+	hr{
+	border: none;               /* Remove default browser 3D border */
+    border-top: 1px dashed #e7e7e7; /* Use border-top for a clean line */
+    height: 0;                  /* Ensure no extra internal height */
+    width: 100%;                /* Optional: ensure it spans the container */
+    margin: 20px 0;
+	}
 	
 	text-align: center;
 	background-color: rgb(0, 0, 0);
@@ -297,33 +306,6 @@ a:visited {
 		pointer-events: none;
 	}
 
-/******************************* cOMIC  REDO 2026*/
-
-.comi_button{
-	display: inline-block;  /* Crucial: gives the link dimensions */
-    width: 200px;           /* Adjust to your PNG width */
-    height: 150px;          /* Adjust to your PNG height */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* This hides the "Home" text so only the image shows */
-    text-indent: -9999px;
-    overflow: hidden;
-	transition: background-image 0.25s ease;*/
-}
-
-
-.button_boot{
-
-	height:150px;
-	width:200px;
-	background-image: url('../../www/img/buttons/wandering_button_boot_idle.png');
-	transition: background-image 0.3s ease;
-	background-repeat: no-repeat;
-}
-.button_boot:hover {
-	background-image: url('../../www/img/buttons/wandering_button_boot_hover.png');
-}
 
 
 /* ALL COMIC CSS  GOES HERE for Wandering******************* */
@@ -351,84 +333,6 @@ a:visited {
 .banner{/*big banner */
 	max-width: 400px;
 }
-
-
-
-/* ARCHIVE TABLE STYLE*/
-./* 1. Force the container to never be wider than the window */
-.archive-container {
-    width: 100% !important;
-    max-width: 900px !important;
-    margin: 20px auto !important;
-    overflow-x: auto !important; /* Forces scroll ONLY if content is huge */
-    padding: 0 !important;
-}
-
-/* 2. Force the table to behave like a standard box */
-.archive-table {
-    width: 100% !important;
-    max-width: 100% !important;
-    table-layout: fixed !important; 
-    min-width: 0 !important; /* Kills the 450px/350px ghost */
-    margin: 0 !important;
-}
-
-/* 3. The "Surface Pro" special: ensure no hidden horizontal scroll on the whole page */
-html, body {
-    overflow-x: hidden; 
-    position: relative;
-}
-
-/* 4. Ensure no tiny element inside is propping it open */
-.archive-table td, 
-.archive-table th {
-    box-sizing: border-box !important;
-    word-break: break-word !important;
-border-collapse: collapse;
-	
-
-}
-
-.archive-table td{
-border-bottom: 2px dashed #33857f; 
-border-left: 2px dashed #33857f;; 
-padding-bottom: 5px;
-
-}
-.archive-table tr{
-
-}
-/* Set exact percentages for your columns */
-.archive-table th:nth-child(1) { width: 15%; } /* Ch. Number */
-.archive-table th:nth-child(2) { width: 60%; } /* Title & Image */
-.archive-table th:nth-child(3) { width: 25%; } /* Date */
-
-.archive-table thead {
-	background-color: rgb(247, 255, 212);
-	color:rgb(255, 96, 96);
-	
-
-}
-.archive-table img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 5px;
-}
-
-.archive-table{
-	color:#000000;
-	background-color: rgb(243, 255, 243);
-}
-/*.archive-table tr:nth-child(even) {
-  background-color: rgb(66, 55, 55);
-}
-
-
-
-  /* MAKE MAILLITE FORM MATCH MY SITE TODO*/
- 
-
-  /* comic 'spinner' when lazy loading*/
 
   .logo{
 	/* Dimensions: Keep it consistent */
@@ -465,3 +369,9 @@ padding-bottom: 5px;
 	max-width: 1000px;
 	background-color: #000000;
 }
+
+.searcherfiller{
+	max-width: 900px;
+	background-color: #000000;
+}
+

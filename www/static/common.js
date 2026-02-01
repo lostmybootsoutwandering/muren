@@ -32,14 +32,14 @@ function setupChapterNav() {
 
     // 2. Inject the HTML
     navPlaceholder.innerHTML = `
+    <h1>
         <a id="next-link" href="${nextHref}" 
            style="${nextDisabled ? 'opacity:0.3; pointer-events:none;' : ''}" >
-            <img src="../img/nav_right.png" alt="Next">
-        </a>
-        <br><br>
-        <a href="../archive/index.html">
-            <img src="../img/nav_left.png" alt="Archive">
-        </a>
+        next</a></h1>
+        <h2> 
+        <a href="../archive/index.html">archive</a> or 
+        <a href="../index.html">home</a>
+        </h2>
     `;
 
     // 3. Keyboard Navigation Logic
