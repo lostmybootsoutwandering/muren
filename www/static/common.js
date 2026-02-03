@@ -33,6 +33,9 @@ function setupChapterNav() {
     // 2. Inject the HTML
     navPlaceholder.innerHTML = `
     <h1>
+
+    <a id="prev-link" href="${prevHref}">back</a> 
+             <img src="../img/muren.png" class="tiny">
         <a id="next-link" href="${nextHref}" 
            style="${nextDisabled ? 'opacity:0.3; pointer-events:none;' : ''}" >
         next</a></h1>

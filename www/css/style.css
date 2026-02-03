@@ -16,10 +16,17 @@ div.art, footer {
 }
 
 /**********************************************************/
+.tiny{
+	max-width: 50px;
+}
 
 
+.searchyarchive{
 
-.archive{
+	background-image: url('../img/a2_2000.webp');
+}
+
+.mainarchive{
 	background-image: url('../img/background.png');
 	background-size:contain;
 
@@ -374,4 +381,5 @@ a:visited {
 	max-width: 900px;
 	background-color: #000000;
 }
+
 
