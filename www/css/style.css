@@ -143,6 +143,10 @@ a:visited {
 
 /* Shrink thumbnail size if the screen size is 600px wide or less */
 @media screen and (max-width: 600px) {
+	.searchy{
+		width: 100;
+
+	}
 
 
  @media screen and (max-width: 600px) {
@@ -383,3 +387,17 @@ a:visited {
 }
 
 
+
+/* ALL COMIC CSS  GOES HERE for Wandering******************* */
+.searchy{
+	display:block;
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+}
+
+.searchy img{
+	display:block;
+	margin: auto;
+	max-width: 800px;
+}
