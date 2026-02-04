@@ -4,7 +4,7 @@ function init() {
 
 /* comic crrazies  1. Set your total number of pages here*/
 /* UPDATE TOTAL CHAPTERS when you post new comics */
-const totalChapters = 4; 
+const totalChapters = 5; 
 
 function setupChapterNav() {
     const path = window.location.pathname;
@@ -35,14 +35,10 @@ function setupChapterNav() {
     <h1>
 
     <a id="prev-link" href="${prevHref}">back</a> 
-             <img src="../img/muren.png" class="tiny">
+            <a href="../index.html"><img src="../img/muren.png" class="tiny"></a>
         <a id="next-link" href="${nextHref}" 
            style="${nextDisabled ? 'opacity:0.3; pointer-events:none;' : ''}" >
         next</a></h1>
-        <h2> 
-        <a href="../archive/index.html">archive</a> or 
-        <a href="../index.html">home</a>
-        </h2>
     `;
 
     // 3. Keyboard Navigation Logic

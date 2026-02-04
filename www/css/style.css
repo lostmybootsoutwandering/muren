@@ -29,7 +29,6 @@ div.art, footer {
 .mainarchive{
 	background-image: url('../img/background.png');
 	background-size:contain;
-
 	hr{
 	border: none;               /* Remove default browser 3D border */
     border-top: 1px dashed #000000; /* Use border-top for a clean line */
@@ -37,7 +36,6 @@ div.art, footer {
     width: 100%;           rgb(0, 0, 0) Optional: ensure it spans the container */
     margin: 20px 0;
 	};
-
 }
 
 
@@ -379,6 +377,8 @@ a:visited {
 
 .searcherfiller{
 	max-width: 900px;
+	text-align: center;
+	margin: auto;
 	background-color: #000000;
 }
 
