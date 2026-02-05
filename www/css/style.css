@@ -39,69 +39,12 @@ div.art, footer {
 }
 
 
-@-webkit-keyframes dark{
-	0% {
-		color: rgb(253, 135, 0);
-	}
-
-	50% {
-		color: rgb(255, 0, 0);
-	}
-
-	70% {
-		color: #7f0000;
-	}
-
-
-	100% {
-		color: rgb(59, 5, 23);
-	}
-}
-
-.darkmagictext {
-	-webkit-animation: dark 2s infinite alternate;
-}
-
-
-@-webkit-keyframes magic {
-	0% {
-		color: dodgerblue;
-	}
-
-	25% {
-		color: lightseagreen;
-	}
-
-	50% {
-		color: lime;
-	}
-
-	75% {
-		color: coral;
-	}
-
-	85% {
-		color: mediumpurple;
-	}
-
-	100% {
-		color: palevioletred;
-	}
-}
-
-.magictext {
-	-webkit-animation: magic 4s infinite alternate;
-}
-
 
 
 h4 {
 	font-size: 15px;
 }
 
-h3,a{
-color:rgb(148, 148, 22)!important;
-}
 
 a.footer a {
 	color: black;
@@ -111,7 +54,7 @@ a.footer a {
 a,
 footer,
 a:visited {
-				color: rgb(0, 0, 0);
+				color: rgb(51, 61, 255);
 	
 }
 
@@ -143,10 +86,6 @@ a:visited {
 
 /* Shrink thumbnail size if the screen size is 600px wide or less */
 @media screen and (max-width: 600px) {
-	.searchy{
-		width: 100;
-
-	}
 
 
  @media screen and (max-width: 600px) {
@@ -283,32 +222,9 @@ a:visited {
 	text-align: center;
 	background-color: rgb(0, 0, 0);
 	
-;
-	color:rgb(220, 220, 220);
-	.dropdown-toggle::after{
-		background-image: url('../img/icons/menulines_small_white.png');
-	};
-	h3,h2{
-		color:rgb(87, 86, 83);
-	}
-
-	a{
-		color:#4db200;
-	}
-
-	a:hover{
-		color:#ffffff;
-	}
-
-	}
-	 .flipped-x{
-		 transform: scaleX(-1);
-	}
-
-
-	.thumbs{
-		max-width: 50px;
-	}
+h1,p{
+	color:wheat;
+}
 
 	.current{
 		color:rgb(34, 44, 33)!important;
@@ -400,4 +316,9 @@ a:visited {
 	display:block;
 	margin: auto;
 	max-width: 800px;
+}
+
+
+a:hover{
+	color:aqua;
 }

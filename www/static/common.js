@@ -4,7 +4,7 @@ function init() {
 
 /* comic crrazies  1. Set your total number of pages here*/
 /* UPDATE TOTAL CHAPTERS when you post new comics */
-const totalChapters = 5; 
+const totalChapters = 6; 
 
 function setupChapterNav() {
     const path = window.location.pathname;
@@ -35,7 +35,7 @@ function setupChapterNav() {
     <h1>
 
     <a id="prev-link" href="${prevHref}">back</a> 
-            <a href="../index.html"><img src="../img/muren.png" class="tiny"></a>
+            <a href="../archive/index.html"><img src="../img/muren.png" class="tiny"></a>
         <a id="next-link" href="${nextHref}" 
            style="${nextDisabled ? 'opacity:0.3; pointer-events:none;' : ''}" >
         next</a></h1>
