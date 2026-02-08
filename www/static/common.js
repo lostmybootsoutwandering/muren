@@ -4,7 +4,7 @@ function init() {
 
 /* comic crrazies  1. Set your total number of pages here*/
 /* UPDATE TOTAL CHAPTERS when you post new comics */
-const totalChapters = 7; 
+const totalChapters = 6; 
 
 function setupChapterNav() {
     const path = window.location.pathname;
